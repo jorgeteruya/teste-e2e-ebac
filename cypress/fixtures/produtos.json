@@ -1,0 +1,26 @@
+[
+    {
+        "nomeProduto":"Ajax Full-Zip Sweatshirt",
+        "tamanho":"S",
+        "cor":"Blue",
+        "quantidade": 2
+    },
+    {
+        "nomeProduto":"Aero Daily Fitness Tee",
+        "tamanho":"L",
+        "cor":"Black",
+        "quantidade": 3
+    },
+    {
+        "nomeProduto":"Ariel Roll Sleeve Sweatshirt",
+        "tamanho":"M",
+        "cor":"Purple",
+        "quantidade": 1
+    },
+    {
+        "nomeProduto":"Celeste Sports Bra",
+        "tamanho":"S",
+        "cor":"Yellow",
+        "quantidade": 1
+    }
+]
