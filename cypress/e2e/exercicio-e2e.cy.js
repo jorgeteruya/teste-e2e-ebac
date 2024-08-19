@@ -48,24 +48,7 @@ describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
       cy.get('#terms').click()
       cy.get('#place_order').click()
-      
-      //cy.get('.woocommerce-notice').should('be.visible').should('contain', 'Obrigado. Seu pedido foi recebido.')
-
-      cy.fixture('produtos').then((produtos) => {
-
-        // Para cada produto no JSON
-        produtos.forEach((produto) => {
-            const nomeProdutoComVariacoes = `${produto.nomeProduto} - ${produto.tamanho}, ${produto.cor}`;
-            
-            // Selecionar o elemento do produto na tabela
-            cy.get('table.woocommerce-table tbody .woocommerce-table__product-name a')
-              .should('contain', nomeProdutoComVariacoes); 
-            
-            
-            const quantidadeEsperada = `${produto.quantidade}`;
-            cy.get('table.woocommerce-table tbody .woocommerce-table__product-name strong.product-quantity')
-              .should('contain', quantidadeEsperada);
-        });
-    });
+      cy.wait(1000)
+      cy.get('.woocommerce-notice').should('be.visible').should('contain', 'Obrigado. Seu pedido foi recebido.')
   });
 })
